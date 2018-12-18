@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title></title>
+ </head>
+ <body>
+   <p id="square" ></p>
+   <br><br><hr>
+   <p id="add"></p>
+     <br><br><hr>
+  <p id="multi"></p>
+     <br><br><hr>
+  <p id="subtract"></p>
+     <br><br><hr>
+  <p id="divide"></p>
+        <br><br><hr>
+   <p id="vol"></p>
+     <br><br><hr>
+    <p id="cour"></p>
+    <p id="c"></p>
+    <p id="o"></p>
+    <p id="u"></p>
+        <br><br><hr>
+   <script>
+   function square(n){
+   return n*n;
+   }
+   document.getElementById("square").innerHTML="square :-"+ square(6);
+   function addNum(num1, num2){
+     return num1+num2;
+   }
+   document.getElementById("add").innerHTML="The addition of the two numbers is :- "+ addNum(20,6 );    function multiNum(num1, num2){
+     return num1 * num2;
+   }
+   document.getElementById("multi").innerHTML="The multiplication of the two numbers is :-"+ multiNum(5, 20);
+   function subtractNum(num1, num2){
+     return num1 - num2;
+   }
+   document.getElementById("subtract").innerHTML="The subtraction of the two numbers is :-"+ subtractNum(20,6 );    function divideNum(num1, num2){
+     return num1/num2;
+   }
+   document.getElementById("divide").innerHTML="The division of the two numbers is :-"+ divideNum(20, 5);
+    function alertHello(){
+        window.alert("Hello World!");
+      }
+      alertHello()
+       function volume(l,w,h) {
+       return l*w*h;
+     }
+     document.getElementById("vol").innerHTML= volume(10,5,10);      var course = {courseName:"BIT", courseFee:"Rs 150 000", startDate:"12.06.2018", center:"Our Office"};
+     document.getElementById("cour").innerHTML="Course Name: " + course.courseName;
+     document.getElementById("c").innerHTML="Course Fee: " + course.courseFee;
+     document.getElementById("o").innerHTML="Start Date: " + course.startDate;
+     document.getElementById("u").innerHTML="Center: " + course.center;
+      </script>
+     </body>
+</html>
